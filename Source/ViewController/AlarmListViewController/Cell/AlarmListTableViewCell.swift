@@ -9,16 +9,18 @@
 import UIKit
 
 class AlarmListTableViewCell: UITableViewCell {
+    
+    @IBOutlet var timeLabel: UILabel?
+    @IBOutlet var daysLabel: UILabel?
+    @IBOutlet var enableSwitch: UISwitch?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    func fill(_ model: Alarm) {
+        self.timeLabel?.text = model.time
+        self.daysLabel?.text = model.days
+        self.enableSwitch?.setOn(true, animated: true)
+    }
 }

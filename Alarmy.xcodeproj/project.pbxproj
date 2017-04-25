@@ -26,6 +26,13 @@
 		C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */; };
 		C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */; };
 		C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */; };
+		C9A756B21EAF9811009FE629 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756A91EAF9811009FE629 /* NSArray.swift */; };
+		C9A756B31EAF9811009FE629 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756AB1EAF9811009FE629 /* Bundle.swift */; };
+		C9A756B41EAF9811009FE629 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756AD1EAF9811009FE629 /* Data.swift */; };
+		C9A756B51EAF9811009FE629 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756AF1EAF9811009FE629 /* String.swift */; };
+		C9A756B61EAF9811009FE629 /* UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756B11EAF9811009FE629 /* UINib.swift */; };
+		C9A756BA1EAF9A04009FE629 /* AddAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756B81EAF9A04009FE629 /* AddAlarmTableViewCell.swift */; };
+		C9A756BB1EAF9A04009FE629 /* AddAlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A756B91EAF9A04009FE629 /* AddAlarmTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +58,13 @@
 		C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmScreenTableViewCell.xib; sourceTree = "<group>"; };
 		C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewCell.swift; sourceTree = "<group>"; };
 		C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListTableViewCell.xib; sourceTree = "<group>"; };
+		C9A756A91EAF9811009FE629 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
+		C9A756AB1EAF9811009FE629 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		C9A756AD1EAF9811009FE629 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C9A756AF1EAF9811009FE629 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C9A756B11EAF9811009FE629 /* UINib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINib.swift; sourceTree = "<group>"; };
+		C9A756B81EAF9A04009FE629 /* AddAlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		C9A756B91EAF9A04009FE629 /* AddAlarmTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAlarmTableViewCell.xib; sourceTree = "<group>"; };
 		D16744BB3580E4E38D71B56C /* Pods-Alarmy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +124,7 @@
 		C9A756831EAF6C52009FE629 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C9A756A71EAF9811009FE629 /* Extensions */,
 				C9A756841EAF6C52009FE629 /* ViewController */,
 			);
 			path = Source;
@@ -128,6 +143,7 @@
 		C9A756851EAF6C52009FE629 /* AddAlarmViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C9A756B71EAF99F1009FE629 /* Cell */,
 				C9A756861EAF6C52009FE629 /* View */,
 				C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */,
 				C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */,
@@ -195,6 +211,67 @@
 			children = (
 				C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */,
 				C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9A756A71EAF9811009FE629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756A81EAF9811009FE629 /* Array+AKIExtension */,
+				C9A756AA1EAF9811009FE629 /* Bundle+AKIExtension */,
+				C9A756AC1EAF9811009FE629 /* Data+AKIExtension */,
+				C9A756AE1EAF9811009FE629 /* String+AKIExtension */,
+				C9A756B01EAF9811009FE629 /* UINib+AKIExtension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9A756A81EAF9811009FE629 /* Array+AKIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756A91EAF9811009FE629 /* NSArray.swift */,
+			);
+			path = "Array+AKIExtension";
+			sourceTree = "<group>";
+		};
+		C9A756AA1EAF9811009FE629 /* Bundle+AKIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756AB1EAF9811009FE629 /* Bundle.swift */,
+			);
+			path = "Bundle+AKIExtension";
+			sourceTree = "<group>";
+		};
+		C9A756AC1EAF9811009FE629 /* Data+AKIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756AD1EAF9811009FE629 /* Data.swift */,
+			);
+			path = "Data+AKIExtension";
+			sourceTree = "<group>";
+		};
+		C9A756AE1EAF9811009FE629 /* String+AKIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756AF1EAF9811009FE629 /* String.swift */,
+			);
+			path = "String+AKIExtension";
+			sourceTree = "<group>";
+		};
+		C9A756B01EAF9811009FE629 /* UINib+AKIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756B11EAF9811009FE629 /* UINib.swift */,
+			);
+			path = "UINib+AKIExtension";
+			sourceTree = "<group>";
+		};
+		C9A756B71EAF99F1009FE629 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756B81EAF9A04009FE629 /* AddAlarmTableViewCell.swift */,
+				C9A756B91EAF9A04009FE629 /* AddAlarmTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -277,6 +354,7 @@
 				C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */,
 				C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */,
 				C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */,
+				C9A756BB1EAF9A04009FE629 /* AddAlarmTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,15 +414,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A756A01EAF74E6009FE629 /* AlarmScreenTableViewCell.swift in Sources */,
+				C9A756B31EAF9811009FE629 /* Bundle.swift in Sources */,
 				C9A756911EAF6C7A009FE629 /* AlarmListViewController.swift in Sources */,
 				C9A7568D1EAF6C68009FE629 /* AddAlarmViewController.swift in Sources */,
+				C9A756B51EAF9811009FE629 /* String.swift in Sources */,
 				C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */,
 				C9A756981EAF6CD4009FE629 /* AlarmScreenView.swift in Sources */,
 				C9A756951EAF6C8B009FE629 /* AlarmScreenViewController.swift in Sources */,
+				C9A756B21EAF9811009FE629 /* NSArray.swift in Sources */,
+				C9A756B41EAF9811009FE629 /* Data.swift in Sources */,
 				C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */,
 				C9A7569A1EAF6CDD009FE629 /* AlarmListView.swift in Sources */,
 				C9A7569C1EAF6CE7009FE629 /* AddAlarmView.swift in Sources */,
 				C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */,
+				C9A756B61EAF9811009FE629 /* UINib.swift in Sources */,
+				C9A756BA1EAF9A04009FE629 /* AddAlarmTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +590,7 @@
 				C9A756811EAF6AAA009FE629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,14 +7,69 @@
 //
 
 import UIKit
+import IDPRootViewGettable
 
-class AlarmListViewController: UIViewController {
+class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDelegate, UITableViewDataSource {
+    
+    typealias RootViewType = AlarmListView
+    
+    var alarms: [Alarm] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        var alarm1 = Alarm()
+        var alarm2 = Alarm()
+        var alarm3 = Alarm()
+        
+        alarm1.time = "08:00"
+        alarm1.days = "Mondey"
+        alarm1.interval = 5
+        alarm1.signalPath = "Good Morning"
+        
+        alarm2.time = "21:00"
+        alarm2.days = "Friday"
+        alarm2.interval = 5
+        alarm2.signalPath = "Vocal"
+        
+        alarm3.time = "12:00"
+        alarm3.days = "Mondey, Friday, Saturday"
+        alarm3.interval = 7
+        alarm3.signalPath = "Paradise"
+        
+        self.alarms.append(alarm1)
+        self.alarms.append(alarm2)
+        self.alarms.append(alarm3)
+        
+        let cell = AlarmListTableViewCell.self
+        self.rootView?.tableView?.register(UINib.nibWithClass(cell),
+                                           forCellReuseIdentifier: String(describing: cell.self))
+        
+        self.navigationController?.title = "Будильник"
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.alarms.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:AlarmListTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: AlarmListTableViewCell.self)) as! AlarmListTableViewCell
+        
+        cell.fill(self.alarms[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = AddAlarmViewController()
+        controller.model = self.alarms[indexPath.row]
+        _ = self.navigationController?.popToViewController(controller, animated: true)
+    }
+}
 
+struct Alarm {
+    var time: String?
+    var days: String?
+    var signalPath: String?
+    var interval: Int?
 }
