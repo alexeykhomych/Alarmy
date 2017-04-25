@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904C3CC5AAF2D4B93535AB59 /* Pods_Alarmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */; };
 		C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756701EAF6AAA009FE629 /* AppDelegate.swift */; };
 		C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756721EAF6AAA009FE629 /* ViewController.swift */; };
 		C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A756741EAF6AAA009FE629 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy.release.xcconfig"; sourceTree = "<group>"; };
 		C9A7566D1EAF6AAA009FE629 /* Alarmy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarmy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A756701EAF6AAA009FE629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A756721EAF6AAA009FE629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmScreenTableViewCell.xib; sourceTree = "<group>"; };
 		C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewCell.swift; sourceTree = "<group>"; };
 		C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListTableViewCell.xib; sourceTree = "<group>"; };
+		D16744BB3580E4E38D71B56C /* Pods-Alarmy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904C3CC5AAF2D4B93535AB59 /* Pods_Alarmy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A2DB2F2CFF243138700385F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16744BB3580E4E38D71B56C /* Pods-Alarmy.debug.xcconfig */,
+				496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9A756641EAF6AAA009FE629 = {
 			isa = PBXGroup;
 			children = (
 				C9A756831EAF6C52009FE629 /* Source */,
 				C9A7566F1EAF6AAA009FE629 /* Alarmy */,
 				C9A7566E1EAF6AAA009FE629 /* Products */,
+				3A2DB2F2CFF243138700385F /* Pods */,
+				F29E710F5B7BE15A2C822D6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +199,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F29E710F5B7BE15A2C822D6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A7567F1EAF6AAA009FE629 /* Build configuration list for PBXNativeTarget "Alarmy" */;
 			buildPhases = (
+				8804E5F6F6244A419321B688 /* [CP] Check Pods Manifest.lock */,
 				C9A756691EAF6AAA009FE629 /* Sources */,
 				C9A7566A1EAF6AAA009FE629 /* Frameworks */,
 				C9A7566B1EAF6AAA009FE629 /* Resources */,
+				95ECFECF47C152B9E6AB5CC6 /* [CP] Embed Pods Frameworks */,
+				F441AEB0A021699634CB2FF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8804E5F6F6244A419321B688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95ECFECF47C152B9E6AB5CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F441AEB0A021699634CB2FF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9A756691EAF6AAA009FE629 /* Sources */ = {
@@ -388,6 +463,7 @@
 		};
 		C9A756801EAF6AAA009FE629 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16744BB3580E4E38D71B56C /* Pods-Alarmy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alarmy/Info.plist;
@@ -400,6 +476,7 @@
 		};
 		C9A756811EAF6AAA009FE629 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Alarmy/Info.plist;
