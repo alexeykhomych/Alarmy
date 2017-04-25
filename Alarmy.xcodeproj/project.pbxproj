@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756701EAF6AAA009FE629 /* AppDelegate.swift */; };
+		C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756721EAF6AAA009FE629 /* ViewController.swift */; };
+		C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A756741EAF6AAA009FE629 /* Main.storyboard */; };
+		C9A756781EAF6AAA009FE629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A756771EAF6AAA009FE629 /* Assets.xcassets */; };
+		C9A7567B1EAF6AAA009FE629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A756791EAF6AAA009FE629 /* LaunchScreen.storyboard */; };
+		C9A7568D1EAF6C68009FE629 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */; };
+		C9A7568E1EAF6C68009FE629 /* AddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */; };
+		C9A756911EAF6C7A009FE629 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7568F1EAF6C7A009FE629 /* AlarmListViewController.swift */; };
+		C9A756921EAF6C7A009FE629 /* AlarmListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A756901EAF6C7A009FE629 /* AlarmListViewController.xib */; };
+		C9A756951EAF6C8B009FE629 /* AlarmScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756931EAF6C8B009FE629 /* AlarmScreenViewController.swift */; };
+		C9A756961EAF6C8B009FE629 /* AlarmScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A756941EAF6C8B009FE629 /* AlarmScreenViewController.xib */; };
+		C9A756981EAF6CD4009FE629 /* AlarmScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756971EAF6CD4009FE629 /* AlarmScreenView.swift */; };
+		C9A7569A1EAF6CDD009FE629 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756991EAF6CDD009FE629 /* AlarmListView.swift */; };
+		C9A7569C1EAF6CE7009FE629 /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7569B1EAF6CE7009FE629 /* AddAlarmView.swift */; };
+		C9A756A01EAF74E6009FE629 /* AlarmScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7569E1EAF74E6009FE629 /* AlarmScreenTableViewCell.swift */; };
+		C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */; };
+		C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */; };
+		C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9A7566D1EAF6AAA009FE629 /* Alarmy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarmy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A756701EAF6AAA009FE629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9A756721EAF6AAA009FE629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9A756751EAF6AAA009FE629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9A756771EAF6AAA009FE629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9A7567A1EAF6AAA009FE629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9A7567C1EAF6AAA009FE629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAlarmViewController.xib; sourceTree = "<group>"; };
+		C9A7568F1EAF6C7A009FE629 /* AlarmListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		C9A756901EAF6C7A009FE629 /* AlarmListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListViewController.xib; sourceTree = "<group>"; };
+		C9A756931EAF6C8B009FE629 /* AlarmScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmScreenViewController.swift; sourceTree = "<group>"; };
+		C9A756941EAF6C8B009FE629 /* AlarmScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmScreenViewController.xib; sourceTree = "<group>"; };
+		C9A756971EAF6CD4009FE629 /* AlarmScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmScreenView.swift; sourceTree = "<group>"; };
+		C9A756991EAF6CDD009FE629 /* AlarmListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		C9A7569B1EAF6CE7009FE629 /* AddAlarmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
+		C9A7569E1EAF74E6009FE629 /* AlarmScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmScreenTableViewCell.swift; sourceTree = "<group>"; };
+		C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmScreenTableViewCell.xib; sourceTree = "<group>"; };
+		C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewCell.swift; sourceTree = "<group>"; };
+		C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9A7566A1EAF6AAA009FE629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9A756641EAF6AAA009FE629 = {
+			isa = PBXGroup;
+			children = (
+				C9A756831EAF6C52009FE629 /* Source */,
+				C9A7566F1EAF6AAA009FE629 /* Alarmy */,
+				C9A7566E1EAF6AAA009FE629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9A7566E1EAF6AAA009FE629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7566D1EAF6AAA009FE629 /* Alarmy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9A7566F1EAF6AAA009FE629 /* Alarmy */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756701EAF6AAA009FE629 /* AppDelegate.swift */,
+				C9A756721EAF6AAA009FE629 /* ViewController.swift */,
+				C9A756741EAF6AAA009FE629 /* Main.storyboard */,
+				C9A756771EAF6AAA009FE629 /* Assets.xcassets */,
+				C9A756791EAF6AAA009FE629 /* LaunchScreen.storyboard */,
+				C9A7567C1EAF6AAA009FE629 /* Info.plist */,
+			);
+			path = Alarmy;
+			sourceTree = "<group>";
+		};
+		C9A756831EAF6C52009FE629 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756841EAF6C52009FE629 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C9A756841EAF6C52009FE629 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756851EAF6C52009FE629 /* AddAlarmViewController */,
+				C9A756871EAF6C52009FE629 /* AlarmListViewController */,
+				C9A756891EAF6C52009FE629 /* AlarmScreenViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C9A756851EAF6C52009FE629 /* AddAlarmViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756861EAF6C52009FE629 /* View */,
+				C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */,
+				C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */,
+			);
+			path = AddAlarmViewController;
+			sourceTree = "<group>";
+		};
+		C9A756861EAF6C52009FE629 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7569B1EAF6CE7009FE629 /* AddAlarmView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9A756871EAF6C52009FE629 /* AlarmListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756A21EAF7961009FE629 /* Cell */,
+				C9A756881EAF6C52009FE629 /* View */,
+				C9A7568F1EAF6C7A009FE629 /* AlarmListViewController.swift */,
+				C9A756901EAF6C7A009FE629 /* AlarmListViewController.xib */,
+			);
+			path = AlarmListViewController;
+			sourceTree = "<group>";
+		};
+		C9A756881EAF6C52009FE629 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756991EAF6CDD009FE629 /* AlarmListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9A756891EAF6C52009FE629 /* AlarmScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7569D1EAF7404009FE629 /* Cell */,
+				C9A7568A1EAF6C52009FE629 /* View */,
+				C9A756931EAF6C8B009FE629 /* AlarmScreenViewController.swift */,
+				C9A756941EAF6C8B009FE629 /* AlarmScreenViewController.xib */,
+			);
+			path = AlarmScreenViewController;
+			sourceTree = "<group>";
+		};
+		C9A7568A1EAF6C52009FE629 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756971EAF6CD4009FE629 /* AlarmScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9A7569D1EAF7404009FE629 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7569E1EAF74E6009FE629 /* AlarmScreenTableViewCell.swift */,
+				C9A7569F1EAF74E6009FE629 /* AlarmScreenTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9A756A21EAF7961009FE629 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9A756A31EAF79FA009FE629 /* AlarmListTableViewCell.swift */,
+				C9A756A41EAF79FA009FE629 /* AlarmListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9A7566C1EAF6AAA009FE629 /* Alarmy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A7567F1EAF6AAA009FE629 /* Build configuration list for PBXNativeTarget "Alarmy" */;
+			buildPhases = (
+				C9A756691EAF6AAA009FE629 /* Sources */,
+				C9A7566A1EAF6AAA009FE629 /* Frameworks */,
+				C9A7566B1EAF6AAA009FE629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alarmy;
+			productName = Alarmy;
+			productReference = C9A7566D1EAF6AAA009FE629 /* Alarmy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9A756651EAF6AAA009FE629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Alexey Khomych";
+				TargetAttributes = {
+					C9A7566C1EAF6AAA009FE629 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C9A756681EAF6AAA009FE629 /* Build configuration list for PBXProject "Alarmy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9A756641EAF6AAA009FE629;
+			productRefGroup = C9A7566E1EAF6AAA009FE629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9A7566C1EAF6AAA009FE629 /* Alarmy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9A7566B1EAF6AAA009FE629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A7568E1EAF6C68009FE629 /* AddAlarmViewController.xib in Resources */,
+				C9A7567B1EAF6AAA009FE629 /* LaunchScreen.storyboard in Resources */,
+				C9A756781EAF6AAA009FE629 /* Assets.xcassets in Resources */,
+				C9A756921EAF6C7A009FE629 /* AlarmListViewController.xib in Resources */,
+				C9A756961EAF6C8B009FE629 /* AlarmScreenViewController.xib in Resources */,
+				C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */,
+				C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */,
+				C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9A756691EAF6AAA009FE629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A756A01EAF74E6009FE629 /* AlarmScreenTableViewCell.swift in Sources */,
+				C9A756911EAF6C7A009FE629 /* AlarmListViewController.swift in Sources */,
+				C9A7568D1EAF6C68009FE629 /* AddAlarmViewController.swift in Sources */,
+				C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */,
+				C9A756981EAF6CD4009FE629 /* AlarmScreenView.swift in Sources */,
+				C9A756951EAF6C8B009FE629 /* AlarmScreenViewController.swift in Sources */,
+				C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */,
+				C9A7569A1EAF6CDD009FE629 /* AlarmListView.swift in Sources */,
+				C9A7569C1EAF6CE7009FE629 /* AddAlarmView.swift in Sources */,
+				C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9A756741EAF6AAA009FE629 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A756751EAF6AAA009FE629 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9A756791EAF6AAA009FE629 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A7567A1EAF6AAA009FE629 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9A7567D1EAF6AAA009FE629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9A7567E1EAF6AAA009FE629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9A756801EAF6AAA009FE629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Alarmy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khomych.Alarmy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9A756811EAF6AAA009FE629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Alarmy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khomych.Alarmy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9A756681EAF6AAA009FE629 /* Build configuration list for PBXProject "Alarmy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A7567D1EAF6AAA009FE629 /* Debug */,
+				C9A7567E1EAF6AAA009FE629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9A7567F1EAF6AAA009FE629 /* Build configuration list for PBXNativeTarget "Alarmy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A756801EAF6AAA009FE629 /* Debug */,
+				C9A756811EAF6AAA009FE629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9A756651EAF6AAA009FE629 /* Project object */;
+}
