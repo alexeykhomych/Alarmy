@@ -10,15 +10,13 @@ import UIKit
 
 class AddAlarmTableViewCell: UITableViewCell {
     
-//    @IBOutlet var
+    @IBOutlet var titleLabel: UILabel?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func fill(_ model: Alarm) {
         
     }
-    
 }

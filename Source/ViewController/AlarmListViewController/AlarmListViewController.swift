@@ -23,7 +23,7 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
         var alarm3 = Alarm()
         
         alarm1.time = "08:00"
-        alarm1.days = "Mondey"
+        alarm1.days = "Monday"
         alarm1.interval = 5
         alarm1.signalPath = "Good Morning"
         
@@ -33,7 +33,7 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
         alarm2.signalPath = "Vocal"
         
         alarm3.time = "12:00"
-        alarm3.days = "Mondey, Friday, Saturday"
+        alarm3.days = "Monday, Friday, Saturday"
         alarm3.interval = 7
         alarm3.signalPath = "Paradise"
         
@@ -45,7 +45,7 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
         self.rootView?.tableView?.register(UINib.nibWithClass(cell),
                                            forCellReuseIdentifier: String(describing: cell.self))
         
-        self.navigationController?.title = "Будильник"
+        self.navigationItem.title = "Будильник"
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,9 +61,9 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = AddAlarmViewController()
+        let controller = AddAlarmTableViewController()
         controller.model = self.alarms[indexPath.row]
-        _ = self.navigationController?.popToViewController(controller, animated: true)
+        _ = self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

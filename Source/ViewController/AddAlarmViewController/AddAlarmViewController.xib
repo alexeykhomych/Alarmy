@@ -18,32 +18,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AddAlarmView" customModule="Alarmy" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-6d-bEY">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
-                    <date key="date" timeIntervalSinceReferenceDate="514814688.58154398">
-                        <!--2017-04-25 12:04:48 +0000-->
-                    </date>
-                </datePicker>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-I4-H0z">
-                    <rect key="frame" x="0.0" y="216" width="375" height="451"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="Hdp-6d-bEY" secondAttribute="trailing" id="0Bm-gP-M1p"/>
-                <constraint firstAttribute="bottom" secondItem="nAW-I4-H0z" secondAttribute="bottom" id="G2r-gy-0TU"/>
-                <constraint firstAttribute="trailing" secondItem="nAW-I4-H0z" secondAttribute="trailing" id="lYo-Zc-ZFD"/>
-                <constraint firstItem="nAW-I4-H0z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nQQ-Uo-4QA"/>
-                <constraint firstItem="Hdp-6d-bEY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t4T-SZ-WdA"/>
-                <constraint firstItem="Hdp-6d-bEY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tng-TA-EYO"/>
-                <constraint firstItem="nAW-I4-H0z" firstAttribute="top" secondItem="Hdp-6d-bEY" secondAttribute="bottom" id="yjZ-bb-nGA"/>
-            </constraints>
-            <connections>
-                <outlet property="datePicker" destination="Hdp-6d-bEY" id="ZAc-Xy-2uq"/>
-                <outlet property="tableView" destination="nAW-I4-H0z" id="6SI-fN-exv"/>
-            </connections>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>

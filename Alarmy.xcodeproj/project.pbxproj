@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		904C3CC5AAF2D4B93535AB59 /* Pods_Alarmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */; };
+		C983755A1EB0C1C200285BAC /* AddAlarmTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */; };
+		C983755C1EB0C1F200285BAC /* AddAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */; };
+		C983755E1EB0EFEE00285BAC /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */; };
+		C98375601EB0F00000285BAC /* ReplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */; };
+		C98375621EB0F00E00285BAC /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */; };
+		C98375641EB0F02000285BAC /* ReplaySoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98375631EB0F02000285BAC /* ReplaySoundTableViewCell.swift */; };
 		C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756701EAF6AAA009FE629 /* AppDelegate.swift */; };
 		C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A756721EAF6AAA009FE629 /* ViewController.swift */; };
 		C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A756741EAF6AAA009FE629 /* Main.storyboard */; };
@@ -38,6 +44,12 @@
 /* Begin PBXFileReference section */
 		311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy.release.xcconfig"; sourceTree = "<group>"; };
+		C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddAlarmTableViewController.storyboard; sourceTree = "<group>"; };
+		C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableViewController.swift; sourceTree = "<group>"; };
+		C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayTableViewCell.swift; sourceTree = "<group>"; };
+		C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		C98375631EB0F02000285BAC /* ReplaySoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaySoundTableViewCell.swift; sourceTree = "<group>"; };
 		C9A7566D1EAF6AAA009FE629 /* Alarmy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarmy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A756701EAF6AAA009FE629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A756721EAF6AAA009FE629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +159,8 @@
 				C9A756861EAF6C52009FE629 /* View */,
 				C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */,
 				C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */,
+				C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */,
+				C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */,
 			);
 			path = AddAlarmViewController;
 			sourceTree = "<group>";
@@ -272,6 +286,10 @@
 			children = (
 				C9A756B81EAF9A04009FE629 /* AddAlarmTableViewCell.swift */,
 				C9A756B91EAF9A04009FE629 /* AddAlarmTableViewCell.xib */,
+				C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */,
+				C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */,
+				C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */,
+				C98375631EB0F02000285BAC /* ReplaySoundTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -354,6 +372,7 @@
 				C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */,
 				C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */,
 				C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */,
+				C983755A1EB0C1C200285BAC /* AddAlarmTableViewController.storyboard in Resources */,
 				C9A756BB1EAF9A04009FE629 /* AddAlarmTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,16 +438,21 @@
 				C9A7568D1EAF6C68009FE629 /* AddAlarmViewController.swift in Sources */,
 				C9A756B51EAF9811009FE629 /* String.swift in Sources */,
 				C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */,
+				C983755C1EB0C1F200285BAC /* AddAlarmTableViewController.swift in Sources */,
 				C9A756981EAF6CD4009FE629 /* AlarmScreenView.swift in Sources */,
 				C9A756951EAF6C8B009FE629 /* AlarmScreenViewController.swift in Sources */,
+				C98375601EB0F00000285BAC /* ReplayTableViewCell.swift in Sources */,
 				C9A756B21EAF9811009FE629 /* NSArray.swift in Sources */,
 				C9A756B41EAF9811009FE629 /* Data.swift in Sources */,
 				C9A756731EAF6AAA009FE629 /* ViewController.swift in Sources */,
 				C9A7569A1EAF6CDD009FE629 /* AlarmListView.swift in Sources */,
 				C9A7569C1EAF6CE7009FE629 /* AddAlarmView.swift in Sources */,
+				C98375621EB0F00E00285BAC /* SoundTableViewCell.swift in Sources */,
+				C983755E1EB0EFEE00285BAC /* TimeTableViewCell.swift in Sources */,
 				C9A756711EAF6AAA009FE629 /* AppDelegate.swift in Sources */,
 				C9A756B61EAF9811009FE629 /* UINib.swift in Sources */,
 				C9A756BA1EAF9A04009FE629 /* AddAlarmTableViewCell.swift in Sources */,
+				C98375641EB0F02000285BAC /* ReplaySoundTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

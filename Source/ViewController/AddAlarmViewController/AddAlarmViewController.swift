@@ -14,15 +14,12 @@ class AddAlarmViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.title = "Добавление"
+        self.navigationItem.title = "Добавить"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
-
 
 }
