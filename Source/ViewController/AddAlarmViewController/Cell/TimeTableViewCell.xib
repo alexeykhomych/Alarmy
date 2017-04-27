@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeTableViewCell" rowHeight="211" id="ZHe-WC-QCX" customClass="TimeTableViewCell" customModule="Alarmy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHe-WC-QCX" id="6mv-Zq-Hoo">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-Fx-epG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
+                        <date key="date" timeIntervalSinceReferenceDate="514814688.58154398">
+                            <!--2017-04-25 12:04:48 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="uk"/>
+                    </datePicker>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="w8y-Fx-epG" secondAttribute="trailing" id="IDY-bo-idX"/>
+                    <constraint firstItem="w8y-Fx-epG" firstAttribute="leading" secondItem="6mv-Zq-Hoo" secondAttribute="leading" id="hr2-2Z-vOg"/>
+                    <constraint firstItem="w8y-Fx-epG" firstAttribute="top" secondItem="6mv-Zq-Hoo" secondAttribute="top" id="jLP-lX-cUX"/>
+                    <constraint firstAttribute="bottom" secondItem="w8y-Fx-epG" secondAttribute="bottom" id="pP6-Nj-QoW"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

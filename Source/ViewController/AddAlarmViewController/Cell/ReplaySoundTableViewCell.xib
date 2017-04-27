@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MGw-kc-8Td" customClass="ReplaySoundTableViewCell" customModule="Alarmy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGw-kc-8Td" id="3Wz-Bw-9Uq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторение сигнала" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCK-5R-MXI">
+                        <rect key="frame" x="18" y="8" width="166" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-nd-DYl">
+                        <rect key="frame" x="311" y="6" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jCK-5R-MXI" firstAttribute="leading" secondItem="3Wz-Bw-9Uq" secondAttribute="leadingMargin" constant="10" id="9mH-Pz-Bdh"/>
+                    <constraint firstItem="6Wu-nd-DYl" firstAttribute="top" secondItem="3Wz-Bw-9Uq" secondAttribute="top" constant="6" id="OG9-hC-OHY"/>
+                    <constraint firstAttribute="bottom" secondItem="6Wu-nd-DYl" secondAttribute="bottom" constant="6" id="OHS-CQ-vBc"/>
+                    <constraint firstAttribute="trailing" secondItem="6Wu-nd-DYl" secondAttribute="trailing" constant="15" id="dmz-zi-VVP"/>
+                    <constraint firstItem="jCK-5R-MXI" firstAttribute="top" secondItem="3Wz-Bw-9Uq" secondAttribute="topMargin" id="jaK-Il-uE7"/>
+                    <constraint firstItem="jCK-5R-MXI" firstAttribute="bottom" secondItem="3Wz-Bw-9Uq" secondAttribute="bottomMargin" id="slp-OP-iTG"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

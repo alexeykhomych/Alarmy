@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ujb-tN-5tW" customClass="SoundTableViewCell" customModule="Alarmy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ujb-tN-5tW" id="Qcv-tp-aOE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Звук" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZG-IM-obP">
+                        <rect key="frame" x="15" y="0.0" width="37" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Радар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3H-sf-Qsu">
+                        <rect key="frame" x="311" y="0.0" width="49" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="a3H-sf-Qsu" secondAttribute="trailing" constant="15" id="BA2-KY-xxW"/>
+                    <constraint firstItem="nZG-IM-obP" firstAttribute="top" secondItem="Qcv-tp-aOE" secondAttribute="top" id="CSP-ut-Afd"/>
+                    <constraint firstItem="nZG-IM-obP" firstAttribute="leading" secondItem="Qcv-tp-aOE" secondAttribute="leading" constant="15" id="ebz-QQ-TB6"/>
+                    <constraint firstAttribute="bottom" secondItem="nZG-IM-obP" secondAttribute="bottom" id="gTO-qo-Fdk"/>
+                    <constraint firstAttribute="bottom" secondItem="a3H-sf-Qsu" secondAttribute="bottom" id="pVL-Av-1ZT"/>
+                    <constraint firstItem="a3H-sf-Qsu" firstAttribute="top" secondItem="Qcv-tp-aOE" secondAttribute="top" id="ygF-Ou-aku"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

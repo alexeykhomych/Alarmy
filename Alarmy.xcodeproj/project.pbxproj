@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		904C3CC5AAF2D4B93535AB59 /* Pods_Alarmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */; };
-		C983755A1EB0C1C200285BAC /* AddAlarmTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */; };
-		C983755C1EB0C1F200285BAC /* AddAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */; };
+		C90D08E21EB2479900430500 /* SoundListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D08E01EB2479900430500 /* SoundListViewController.swift */; };
+		C90D08E31EB2479900430500 /* SoundListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90D08E11EB2479900430500 /* SoundListViewController.xib */; };
+		C90D08E61EB247DD00430500 /* SoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D08E51EB247DD00430500 /* SoundListView.swift */; };
+		C92D80E71EB1DE9900C30165 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92D80E61EB1DE9900C30165 /* TimeTableViewCell.xib */; };
+		C92D80E91EB1DEA500C30165 /* ReplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92D80E81EB1DEA500C30165 /* ReplayTableViewCell.xib */; };
+		C92D80EB1EB1DEB200C30165 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92D80EA1EB1DEB200C30165 /* SoundTableViewCell.xib */; };
+		C92D80ED1EB1DEBD00C30165 /* ReplaySoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92D80EC1EB1DEBD00C30165 /* ReplaySoundTableViewCell.xib */; };
 		C983755E1EB0EFEE00285BAC /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */; };
 		C98375601EB0F00000285BAC /* ReplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */; };
 		C98375621EB0F00E00285BAC /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */; };
@@ -44,8 +49,13 @@
 /* Begin PBXFileReference section */
 		311C45A47D8FDE21BC5535A6 /* Pods_Alarmy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmy/Pods-Alarmy.release.xcconfig"; sourceTree = "<group>"; };
-		C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddAlarmTableViewController.storyboard; sourceTree = "<group>"; };
-		C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableViewController.swift; sourceTree = "<group>"; };
+		C90D08E01EB2479900430500 /* SoundListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundListViewController.swift; sourceTree = "<group>"; };
+		C90D08E11EB2479900430500 /* SoundListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundListViewController.xib; sourceTree = "<group>"; };
+		C90D08E51EB247DD00430500 /* SoundListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundListView.swift; sourceTree = "<group>"; };
+		C92D80E61EB1DE9900C30165 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		C92D80E81EB1DEA500C30165 /* ReplayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplayTableViewCell.xib; sourceTree = "<group>"; };
+		C92D80EA1EB1DEB200C30165 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
+		C92D80EC1EB1DEBD00C30165 /* ReplaySoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplaySoundTableViewCell.xib; sourceTree = "<group>"; };
 		C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayTableViewCell.swift; sourceTree = "<group>"; };
 		C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,6 +111,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C90D08DF1EB246A300430500 /* SoundListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C90D08E41EB247B900430500 /* View */,
+				C90D08E01EB2479900430500 /* SoundListViewController.swift */,
+				C90D08E11EB2479900430500 /* SoundListViewController.xib */,
+			);
+			path = SoundListViewController;
+			sourceTree = "<group>";
+		};
+		C90D08E41EB247B900430500 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C90D08E51EB247DD00430500 /* SoundListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C9A756641EAF6AAA009FE629 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +173,7 @@
 		C9A756841EAF6C52009FE629 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C90D08DF1EB246A300430500 /* SoundListViewController */,
 				C9A756851EAF6C52009FE629 /* AddAlarmViewController */,
 				C9A756871EAF6C52009FE629 /* AlarmListViewController */,
 				C9A756891EAF6C52009FE629 /* AlarmScreenViewController */,
@@ -159,8 +188,6 @@
 				C9A756861EAF6C52009FE629 /* View */,
 				C9A7568B1EAF6C68009FE629 /* AddAlarmViewController.swift */,
 				C9A7568C1EAF6C68009FE629 /* AddAlarmViewController.xib */,
-				C98375591EB0C1C200285BAC /* AddAlarmTableViewController.storyboard */,
-				C983755B1EB0C1F200285BAC /* AddAlarmTableViewController.swift */,
 			);
 			path = AddAlarmViewController;
 			sourceTree = "<group>";
@@ -287,9 +314,13 @@
 				C9A756B81EAF9A04009FE629 /* AddAlarmTableViewCell.swift */,
 				C9A756B91EAF9A04009FE629 /* AddAlarmTableViewCell.xib */,
 				C983755D1EB0EFEE00285BAC /* TimeTableViewCell.swift */,
+				C92D80E61EB1DE9900C30165 /* TimeTableViewCell.xib */,
 				C983755F1EB0F00000285BAC /* ReplayTableViewCell.swift */,
+				C92D80E81EB1DEA500C30165 /* ReplayTableViewCell.xib */,
 				C98375611EB0F00E00285BAC /* SoundTableViewCell.swift */,
+				C92D80EA1EB1DEB200C30165 /* SoundTableViewCell.xib */,
 				C98375631EB0F02000285BAC /* ReplaySoundTableViewCell.swift */,
+				C92D80EC1EB1DEBD00C30165 /* ReplaySoundTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -337,6 +368,7 @@
 				TargetAttributes = {
 					C9A7566C1EAF6AAA009FE629 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K33J7AD8C7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -364,15 +396,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92D80EB1EB1DEB200C30165 /* SoundTableViewCell.xib in Resources */,
 				C9A7568E1EAF6C68009FE629 /* AddAlarmViewController.xib in Resources */,
+				C92D80E71EB1DE9900C30165 /* TimeTableViewCell.xib in Resources */,
 				C9A7567B1EAF6AAA009FE629 /* LaunchScreen.storyboard in Resources */,
 				C9A756781EAF6AAA009FE629 /* Assets.xcassets in Resources */,
 				C9A756921EAF6C7A009FE629 /* AlarmListViewController.xib in Resources */,
 				C9A756961EAF6C8B009FE629 /* AlarmScreenViewController.xib in Resources */,
 				C9A756A11EAF74E6009FE629 /* AlarmScreenTableViewCell.xib in Resources */,
 				C9A756761EAF6AAA009FE629 /* Main.storyboard in Resources */,
+				C92D80E91EB1DEA500C30165 /* ReplayTableViewCell.xib in Resources */,
+				C90D08E31EB2479900430500 /* SoundListViewController.xib in Resources */,
+				C92D80ED1EB1DEBD00C30165 /* ReplaySoundTableViewCell.xib in Resources */,
 				C9A756A61EAF79FA009FE629 /* AlarmListTableViewCell.xib in Resources */,
-				C983755A1EB0C1C200285BAC /* AddAlarmTableViewController.storyboard in Resources */,
 				C9A756BB1EAF9A04009FE629 /* AddAlarmTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +469,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A756A01EAF74E6009FE629 /* AlarmScreenTableViewCell.swift in Sources */,
+				C90D08E21EB2479900430500 /* SoundListViewController.swift in Sources */,
+				C90D08E61EB247DD00430500 /* SoundListView.swift in Sources */,
 				C9A756B31EAF9811009FE629 /* Bundle.swift in Sources */,
 				C9A756911EAF6C7A009FE629 /* AlarmListViewController.swift in Sources */,
 				C9A7568D1EAF6C68009FE629 /* AddAlarmViewController.swift in Sources */,
 				C9A756B51EAF9811009FE629 /* String.swift in Sources */,
 				C9A756A51EAF79FA009FE629 /* AlarmListTableViewCell.swift in Sources */,
-				C983755C1EB0C1F200285BAC /* AddAlarmTableViewController.swift in Sources */,
 				C9A756981EAF6CD4009FE629 /* AlarmScreenView.swift in Sources */,
 				C9A756951EAF6C8B009FE629 /* AlarmScreenViewController.swift in Sources */,
 				C98375601EB0F00000285BAC /* ReplayTableViewCell.swift in Sources */,
@@ -518,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -561,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -574,6 +611,7 @@
 			baseConfigurationReference = D16744BB3580E4E38D71B56C /* Pods-Alarmy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K33J7AD8C7;
 				INFOPLIST_FILE = Alarmy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khomych.Alarmy;
@@ -587,6 +625,7 @@
 			baseConfigurationReference = 496B74B5CCC30EAB399B456E /* Pods-Alarmy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K33J7AD8C7;
 				INFOPLIST_FILE = Alarmy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khomych.Alarmy;

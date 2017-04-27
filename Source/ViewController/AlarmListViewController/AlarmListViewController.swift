@@ -41,11 +41,8 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
         self.alarms.append(alarm2)
         self.alarms.append(alarm3)
         
-        let cell = AlarmListTableViewCell.self
-        self.rootView?.tableView?.register(UINib.nibWithClass(cell),
-                                           forCellReuseIdentifier: String(describing: cell.self))
-        
-        self.navigationItem.title = "Будильник"
+        self.prepareTableView()
+        self.prepareNavigationBar()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,9 +58,38 @@ class AlarmListViewController: UIViewController, RootViewGettable, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = AddAlarmTableViewController()
+        let controller = AddAlarmViewController()
         controller.model = self.alarms[indexPath.row]
         _ = self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    private func prepareTableView() {
+        let cell = AlarmListTableViewCell.self
+        self.rootView?.tableView?.register(UINib.nibWithClass(cell),
+                                           forCellReuseIdentifier: String(describing: cell.self))
+    }
+    
+    private func prepareNavigationBar() {
+        let navigationItem = self.navigationItem
+        
+        navigationItem.title = "Будильник"
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarm))
+        let editButton = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(removeAlarm))
+        
+        navigationItem.setRightBarButton(addButton, animated: true)
+        navigationItem.setLeftBarButton(editButton, animated: true)
+    }
+    
+    @objc private func addAlarm() {
+        let controller = AddAlarmViewController()
+        controller.model = nil
+        _ = self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc private func removeAlarm() {
+        let isEdit = self.rootView?.tableView?.isEditing
+        self.rootView?.tableView?.setEditing(!isEdit!, animated: true)
     }
 }
 

@@ -6,44 +6,62 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="AlarmListTableViewCell" customModule="Alarmy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="338" height="99"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="AlarmListTableViewCell" customModule="Alarmy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="56"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="338" height="98"/>
+                <rect key="frame" x="0.0" y="0.0" width="316" height="56"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12F-DX-Wgj">
-                        <rect key="frame" x="0.0" y="8" width="162" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Каждый будний день" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-Pr-dbd">
-                        <rect key="frame" x="8" y="64" width="208" height="38"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odb-VP-QvB">
-                        <rect key="frame" x="272" y="31" width="51" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-hP-BWz">
+                        <rect key="frame" x="10" y="0.0" width="151" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="8:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12F-DX-Wgj">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждый будний день" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-Pr-dbd">
+                                <rect key="frame" x="0.0" y="38" width="151" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="12F-DX-Wgj" firstAttribute="top" secondItem="2pA-hP-BWz" secondAttribute="top" id="Lpd-Xd-hZG"/>
+                            <constraint firstItem="12F-DX-Wgj" firstAttribute="leading" secondItem="2pA-hP-BWz" secondAttribute="leading" id="NoB-Kl-RtS"/>
+                            <constraint firstItem="nr2-Pr-dbd" firstAttribute="leading" secondItem="2pA-hP-BWz" secondAttribute="leading" id="T4q-id-nIb"/>
+                            <constraint firstItem="nr2-Pr-dbd" firstAttribute="top" secondItem="12F-DX-Wgj" secondAttribute="bottom" id="leb-nz-eXZ"/>
+                        </constraints>
+                    </stackView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odb-VP-QvB">
+                        <rect key="frame" x="259" y="12" width="51" height="31"/>
                     </switch>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="odb-VP-QvB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="BdW-Ns-Ps8"/>
+                    <constraint firstItem="odb-VP-QvB" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="S2e-gL-ByM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="odb-VP-QvB" secondAttribute="bottom" constant="4.5" id="aap-c7-n8s"/>
+                    <constraint firstItem="2pA-hP-BWz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="g26-6s-0at"/>
+                    <constraint firstItem="2pA-hP-BWz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hlq-XJ-WMT"/>
+                    <constraint firstAttribute="bottom" secondItem="2pA-hP-BWz" secondAttribute="bottom" id="lKw-9d-23F"/>
+                    <constraint firstItem="odb-VP-QvB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m25-F1-hKC"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="daysLabel" destination="nr2-Pr-dbd" id="1rx-Mc-JhZ"/>
                 <outlet property="enableSwitch" destination="odb-VP-QvB" id="O0x-jA-jOG"/>
                 <outlet property="timeLabel" destination="12F-DX-Wgj" id="AOG-6H-szX"/>
             </connections>
-            <point key="canvasLocation" x="34" y="78.5"/>
+            <point key="canvasLocation" x="24" y="49"/>
         </tableViewCell>
     </objects>
 </document>

@@ -1,13 +1,14 @@
 //
-//  AddAlarmView.swift
+//  SoundListView.swift
 //  Alarmy
 //
-//  Created by Alexey Khomych on 4/25/17.
+//  Created by Alexey Khomych on 4/27/17.
 //  Copyright © 2017 Alexey Khomych. All rights reserved.
 //
 
 import UIKit
 
-class AddAlarmView: UIView {
+class SoundListView: UIView {
     @IBOutlet var tableView: UITableView?
+
 }
